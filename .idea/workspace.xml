@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f7048f-7675-4ce7-9f1f-c9fdff9af3bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/AbstractSqlConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SelectSqlConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/strategy/ShardStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfigParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SqlConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SqlConverterFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/DeleteSqlConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/InsertSqlConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/visitor/TableNameModifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/UpdateSqlConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/AbstractSqlConverter.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/AbstractSqlConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SelectSqlConverter.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SelectSqlConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shardbatis.iml" afterPath="$PROJECT_DIR$/shardbatis.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shardbatis.iws" />
@@ -37,41 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SelectSqlConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SelectSqlConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1166">
-              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShardStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/strategy/ShardStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SqlConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="396">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShardbatisConfigParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfigParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="3366">
-              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1364">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,25 +48,114 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShardbatisConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfig.java">
+      <file leaf-file-name="DeleteSqlConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/DeleteSqlConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40338504" vertical-offset="22" max-vertical-offset="1430">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#621#644#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shardbatis-config.dtd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/shardbatis-config.dtd">
+      <file leaf-file-name="UpdateSqlConverter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/UpdateSqlConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.387097" vertical-offset="0" max-vertical-offset="352">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.5131195" vertical-offset="0" max-vertical-offset="686">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLExprTableSource.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLExprTableSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding>
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLExpr.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/SQLExpr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="264">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#700#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertSqlConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/InsertSqlConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLInsertInto.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLInsertInto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1188">
+              <caret line="61" column="61" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="61" />
+              <folding>
+                <element signature="e#1810#1811#0" expanded="true" />
+                <element signature="e#1880#1881#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLUpdateStatement.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLUpdateStatement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="1848">
+              <caret line="41" column="27" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="27" />
+              <folding>
+                <element signature="e#1322#1323#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLTableSource.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLTableSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLDeleteStatement.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLDeleteStatement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1474">
+              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+              <folding>
+                <element signature="e#1736#1737#0" expanded="true" />
+                <element signature="e#1806#1807#0" expanded="true" />
+                <element signature="e#1851#1852#0" expanded="true" />
+                <element signature="e#1908#1909#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,9 +178,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SqlConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/strategy/ShardStrategy.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfigParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/AbstractSqlConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/visitor/TableNameModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SelectSqlConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/DeleteSqlConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/InsertSqlConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/UpdateSqlConverter.java" />
       </list>
     </option>
   </component>
@@ -280,6 +344,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="visitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shardbatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shardbatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shardbatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="strategy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -367,12 +461,16 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.shardbatis.visitor" />
       <recent name="com.github.shardbatis.strategy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/github/shardbatis/visitor" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder" />
       <recent name="$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter" />
@@ -787,7 +885,7 @@
       <created>1440332649743</created>
       <option name="number" value="Default" />
       <updated>1440332649743</updated>
-      <workItem from="1440332655430" duration="904000" />
+      <workItem from="1440332655430" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="迁移">
       <created>1440333520201</created>
@@ -795,11 +893,17 @@
       <option name="project" value="LOCAL" />
       <updated>1440333520201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加类">
+      <created>1440333599755</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1440333599755</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="904000" />
+    <option name="totallyTimeSpent" value="3383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="1057" extended-state="0" />
@@ -851,21 +955,14 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="迁移" />
-    <option name="LAST_COMMIT_MESSAGE" value="迁移" />
+    <MESSAGE value="添加类" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SqlConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="396">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/strategy/ShardStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
@@ -874,11 +971,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfigParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1166">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="3366">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -890,23 +989,217 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfigParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="3366">
-          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="1430">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#621#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SqlConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="396">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shardbatis.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5412">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1364">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/AbstractSqlConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="836">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/dialect/mysql/visitor/MySqlASTVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0740743" vertical-offset="0" max-vertical-offset="10032">
+          <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/visitor/SQLASTVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9636">
+          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLSelectStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="858">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/SQLObjectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="1980">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/visitor/TableNameModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24610" max-vertical-offset="39314">
+          <caret line="1409" column="43" selection-start-line="1409" selection-start-column="25" selection-end-line="1409" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#22441#22442#0" expanded="false" />
+            <element signature="e#22469#22470#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/visitor/SQLASTVisitorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3780" max-vertical-offset="16434">
+          <caret line="395" column="5" selection-start-line="395" selection-start-column="5" selection-end-line="395" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/dialect/mysql/visitor/MySqlASTVisitorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0740743" vertical-offset="0" max-vertical-offset="21186">
+          <caret line="129" column="53" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/SelectSqlConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1364">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/builder/ShardbatisConfig.java">
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLDeleteStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40338504" vertical-offset="22" max-vertical-offset="1430">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1474">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+          <folding>
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/DeleteSqlConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#621#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLTableSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLUpdateStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="1848">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="27" />
+          <folding>
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/InsertSqlConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLInsertInto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1188">
+          <caret line="61" column="61" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="61" />
+          <folding>
+            <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/SQLExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="264">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#700#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/q/.repository/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/sql/ast/statement/SQLExprTableSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/shardbatis/converter/UpdateSqlConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5131195" vertical-offset="0" max-vertical-offset="686">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
