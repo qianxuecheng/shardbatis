@@ -20,6 +20,11 @@
                <artifactId>druid</artifactId>
                <version>1.0.9</version>
            </dependency>
+           <dependency>
+               <groupId>org.mybatis</groupId>
+               <artifactId>mybatis</artifactId>
+               <version>3.2.3</version>
+           </dependency>
        </dependencies>
    </dependencyManagement>
 
@@ -27,6 +32,10 @@
       <dependency>
           <groupId>com.alibaba</groupId>
           <artifactId>druid</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.mybatis</groupId>
+          <artifactId>mybatis</artifactId>
       </dependency>
     <dependency>
       <groupId>junit</groupId>
