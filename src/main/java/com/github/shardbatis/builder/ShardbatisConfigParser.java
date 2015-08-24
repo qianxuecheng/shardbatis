@@ -39,7 +39,6 @@ public class ShardbatisConfigParser {
      */
     public ShardbatisConfig parse(InputStream input) throws Exception {
         final ShardbatisConfig configHolder = ShardbatisConfig.getInstance();
-
         SAXParserFactory spf = SAXParserFactory.newInstance();
         spf.setValidating(true);
         spf.setNamespaceAware(true);

@@ -14,6 +14,6 @@ public class InsertSqlConverter extends AbstractSqlConverter{
         Preconditions.checkArgument(statement instanceof SQLInsertStatement,"Parameter 'statement' must be instance of 'SQLInsertStatement'");
         SQLInsertStatement insertStatement= (SQLInsertStatement) statement;
         insertStatement.setTableName(new SQLIdentifierExpr(convertTabName(insertStatement.getTableName().getSimpleName(),params,mapperId)));
-        return null;
+        return insertStatement;
     }
 }

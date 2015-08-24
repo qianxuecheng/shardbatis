@@ -14,9 +14,6 @@ public abstract class AbstractSqlConverter implements SqlConverter{
         return doDeParse(doConvert(statement, params, mapperId));
     }
 
-
-
-
     protected abstract SQLStatement doConvert(SQLStatement statement, Object params, String mapperId);
     protected String doDeParse(SQLStatement statement) {
         MySqlOutputVisitor deParser = new MySqlOutputVisitor(new StringBuffer());

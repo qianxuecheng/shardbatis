@@ -14,12 +14,15 @@ import java.io.IOException;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        String sql="select * from test,test2 where id in (select id from test2 where id=?)";
+        String selectSql="select * from test,test2 where id in (select id from test2 where id=?)";
         String updateSql="update test set id=?";
+        String insertSql="insert into test values()";
+        String deleteSql="delete from test where id";
         ShardbatisConfig config = new ShardbatisConfigParser().parse(Resources.getResourceAsStream("shardbatis-config.xml"));
-        System.out.println(SqlConverterFactory.getInstance().convert(sql, "hehe", "hehe"));
+        System.out.println(SqlConverterFactory.getInstance().convert(selectSql, "hehe", "hehe"));
         System.out.println(SqlConverterFactory.getInstance().convert(updateSql, "hehe", "hehe"));
-
+        System.out.println(SqlConverterFactory.getInstance().convert(insertSql, "hehe", "hehe"));
+        System.out.println(SqlConverterFactory.getInstance().convert(deleteSql, "hehe", "hehe"));
 
     }
 }
