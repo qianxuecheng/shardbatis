@@ -1,12 +1,11 @@
 package com.github.shardbatis.builder;
 
-import com.github.shardbatis.strategy.ShardStrategy;
-
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
+import com.github.shardbatis.strategy.ShardStrategy;
 
 
 /**
@@ -59,11 +58,5 @@ public class ShardbatisConfig {
     public boolean isIgnoreId(String id) {
         return ignoreSet != null && ignoreSet.contains(id);
     }
-
-
-
-
-
-
 
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shardingConfig PUBLIC "-//shardbatis.github.com//DTD Shardbatis 2.0//EN"
+        "http://shardbatis.github.com/dtd/shardbatis-config.dtd">
+<shardingConfig>
+    <strategy tableName="test" strategyClass="com.github.shardbatis.strategy.impl.ShardStrategyImpl"/>
+    <strategy tableName="test2" strategyClass="com.github.shardbatis.strategy.impl.ShardStrategyImpl2"/>
+</shardingConfig>
